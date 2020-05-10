@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderService</name>
+    </assembly>
+    <members>
+        <member name="T:OrderService.Controllers.OrderController">
+            <summary>
+            Everything about Orders
+            </summary>
+        </member>
+        <member name="M:OrderService.Controllers.OrderController.Get">
+            <summary>
+            Find all Orders
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OrderService.Controllers.OrderController.Get(System.Guid)">
+            <summary>
+            Find Order by ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrderService.Controllers.OrderController.Post(OrderService.Entity.Order)">
+            <summary>
+            Add a new Order
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrderService.Controllers.OrderController.Put(OrderService.Entity.Order)">
+            <summary>
+            Update an existing Order
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrderService.Controllers.OrderController.Delete(System.String)">
+            <summary>
+            Delete an Order
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OrderService.Controllers.OrderController.PopulateMockOrder">
+            <summary>
+            Populate mock Order
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OrderService.Extensions.CosmosExtension.AddCosmosExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Extension method for adding Cosmos DB configuration
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:OrderService.Extensions.HealthCheckExtension.AddHealthCheckExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Extension method for adding Health Check configuration
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:OrderService.Extensions.HealthCheckExtension.UseHealthCheckExtension(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Extension method for using Health Check configuration
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:OrderService.Extensions.SwaggerExtension.AddSwaggerExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Extension method for adding Swagger configuration
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:OrderService.Extensions.SwaggerExtension.UseSwaggerExtension(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Extension method for using swagger configuration
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="configuration"></param>
+        </member>
+    </members>
+</doc>
